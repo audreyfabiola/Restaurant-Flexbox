@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #ffffff;
+}
+
+section{
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: #e26784;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 30px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #eba7ac;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #eba7ac;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #eba7ac;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 120px;
+    line-height: 22px;
+}
+
+  
+/*foods*/
+
+
+.foods{
+    width: 100%;
+    padding: 70px 0;
+    
+}
+
+.foods h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #eba7ac;
+    font-family: mv boli;
+    margin-left: 15px;
+}
+
+.foods h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.foods .foods_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.foods .foods_box .foods_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    
+}
+
+.foods .foods_box .foods_card .foods_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.foods .foods_box .foods_card .foods_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.foods .foods_box .foods_card .foods_image:hover img{
+    transform: scale(1.1);
+}
+
+.foods .foods_box .foods_card .foods_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #eba7ac;
+}
+
+.foods .foods_box .foods_card .foods_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.foods .foods_box .foods_card .foods_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.foods .foods_box .foods_card .foods_info .foods_icon{
+    color: #eba7ac;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.foods .foods_box .foods_card .foods_info .foods_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+/*drinks*/
+
+.drinks{
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.drinks h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: #eba7ac;
+    font-family: mv boli;
+    margin-left: 15px;
+}
+
+.drinks h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #eba7ac;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.drinks .drinks_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.drinks .drinks_box .drinks_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.drinks .drinks_box .drinks_card .drinks_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.drinks .drinks_box .drinks_card .drinks_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.drinks .drinks_box .drinks_card .drinks_image:hover img{
+    transform: scale(1.1);
+}
+
+.drinks .drinks_box .drinks_card .drinks_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #eba7ac;
+}
+
+.drinks .drinks_box .drinks_card .drinks_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.drinks .drinks_box .drinks_card .drinks_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.drinks .drinks_box .drinks_card .drinks_info .drinks_icon{
+    color: #eba7ac;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.drinks .drinks_box .drinks_card .drinks_info .drinks_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+
+/*media queries*/
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    .foods {
+      width: 1150px;
+    }
+    .drinks {
+        width: 1150px;
+      }
+  }
+  
+  @media only screen and (min-width: 671px) and (max-width: 1000px) {
+    .foods {
+      width: 970px;
+    }
+    .drinks {
+        width: 970px;
+      }
+  }
+  
+  @media only screen and(max-width: 670px) {
+    .foods {
+      width: 300px;
+    }
+    .drinks {
+        width: 300px;
+      }
+  }
+
+
+
